@@ -1,0 +1,10 @@
+<div class="col-xs-12" *ngIf="!editMode">
+    <input type="text" class="form-control" [(ngModel)]="title" />
+    <input type="text" class="form-control" [(ngModel)]="description" />
+    <input
+        type="file"
+        accept="image/*"
+        class="file-input"
+        (change)="onFileUpload($event)"
+    />
+</div>
